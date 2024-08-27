@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'campaign/styles.css' %}">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'events' %}">Events</a>
+            <a href="{% url 'volunteer' %}">Volunteer</a>
+            {% if user.is_authenticated %}
+                <form id="logout-form" action="{% url 'logout' %}" method="POST" style="display:none;">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form>
+                <a href="#" onclick="document.getElementById('logout-form').submit();">Logout</a>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>
+            {% endif %}
+            <a href="{% url 'register' %}">Register</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Welcome, {{ user.username }}!</h1>
+        <p>Email: {{ user.email }}</p>
+        <p>First Name: {{ user.first_name }}</p>
+        <p>Last Name: {{ user.last_name }}</p>
+
+        <p>If you wish to change your details, you can update them in your account settings.</p>
+        
+        <a href="{% url 'home' %}">Back to Home</a>
+    </main>
+</body>
+</html>

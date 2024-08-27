@@ -1,0 +1,10 @@
+{% extends 'campaign/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>{{ candidate.name }}</h1>
+<img src="{{ candidate.image.url }}" alt="{{ candidate.name }}">
+<p>{{ candidate.bio }}</p>
+<a href="{{ candidate.website }}">Visit Website</a>
+{% endblock %}

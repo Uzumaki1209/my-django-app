@@ -1,0 +1,16 @@
+{% extends 'campaign/base.html' %}
+
+{% block title %}Events{% endblock %}
+
+{% block content %}
+<h2>Upcoming Events</h2>
+<ul>
+    {% for event in events %}
+    <li>
+        <strong>{{ event.title }}</strong><br>
+        {{ event.description }}<br>
+        <em>{{ event.date }}</em> at {{ event.location }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

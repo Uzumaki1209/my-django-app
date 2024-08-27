@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to the external stylesheet using Django's static template tag -->
+    <link rel="stylesheet" href="{% static 'campaign/styles.css' %}">
+    
+    <!-- Title block, which can be overridden in child templates -->
+    <title>{% block title %}Candidate{% endblock %}</title>
+</head>
+<body>
+    <!-- Header section containing the navigation menu -->
+    <header>
+        <nav>
+            <!-- Navigation links to different pages using Django's URL template tag -->
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'events' %}">Events</a>
+            <a href="{% url 'volunteer' %}">Volunteer</a>
+            
+            <!-- Conditional block: checks if the user is authenticated -->
+            {% if user.is_authenticated %}
+                <!-- Hidden form for logout -->
+                <form id="logout-form" action="{% url 'logout' %}" method="POST" style="display:none;">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form>
+                
+                <!-- Link that triggers the hidden logout form submission -->
+                <a href="#" onclick="document.getElementById('logout-form').submit();">Logout</a>
+            {% else %}
+                <!-- Link to the login page if the user is not authenticated -->
+                <a href="{% url 'login' %}">Login</a>
+            {% endif %}
+            
+            <!-- Link to the registration page -->
+            <a href="{% url 'register' %}">Register</a>
+        </nav>
+    </header>
+    
+    <!-- Main content area, with a block that can be overridden in child templates -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

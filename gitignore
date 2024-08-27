@@ -1,0 +1,17 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+
+# Virtualenv
+venv/
+.env
+
+# Ignore all binary files
+*.exe
+*.dll
+*.so
+*.dylib
