@@ -16,7 +16,7 @@ class Candidate(models.Model):
     website = models.URLField()
     
     # Define an image field for the candidate's picture, with images uploaded to the 'candidates/' directory
-    image = models.ImageField(upload_to='candidates/')
+    image = models.ImageField(upload_to='candidates\116137226_s-1440x564_c.jpg')
 
     # Define the string representation of the model, returning the candidate's name
     def __str__(self):

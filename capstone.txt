@@ -1,0 +1,1 @@
+https://github.com/Uzumaki1209/my-django-app
