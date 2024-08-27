@@ -25,7 +25,7 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/Uzumaki1209/my-django-app
-   cd your-repo-name
+   cd my-django-app
    ```
 
 2. **Build the Docker image:**
