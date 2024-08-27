@@ -1,3 +1,4 @@
+
 # Django Application with Docker
 
 This is a Django application that has been containerized using Docker. The project includes a Dockerfile to build a Docker image and run the Django application in a container.
@@ -23,52 +24,67 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Uzumaki1209/my-django-app
+   git clone https://github.com/yourusername/your-repo-name.git
    cd your-repo-name
+   ```
 
-Build the Docker image:
+2. **Build the Docker image:**
 
-Run the following command in the root directory of your project where the Dockerfile is located:
+   Run the following command in the root directory of your project where the Dockerfile is located:
 
-docker build -t django-app .
+   ```bash
+   docker build -t django-app .
+   ```
 
-Running the Application
+## Running the Application
 
-Run the Docker Container:
+1. **Run the Docker Container:**
 
-To start the Django application in a Docker container, run:
+   To start the Django application in a Docker container, run:
 
-docker run -p 8000:8000 django-app
+   ```bash
+   docker run -p 8000:8000 django-app
+   ```
 
-Access the Application:
+2. **Access the Application:**
 
-Open your web browser and go to http://localhost:8000 to view the Django application.
+   Open your web browser and go to `http://localhost:8000` to view the Django application.
 
-Development
+## Development
 
 If you want to contribute to this project or run it locally without Docker, follow these steps:
 
-Create a virtual environment:
+1. **Create a virtual environment:**
 
-python -m venv venv
-Activate the virtual environment:
+   ```bash
+   python -m venv venv
+   ```
 
-On Windows:
+2. **Activate the virtual environment:**
 
-.\venv\Scripts\activate
+   - On Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - On macOS and Linux:
+     ```bash
+     source venv/bin/activate
+     ```
 
-On macOS and Linux:
+3. **Install dependencies:**
 
-source venv/bin/activate
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Install dependencies:
+4. **Run the Django development server:**
 
-pip install -r requirements.txt
+   ```bash
+   python manage.py runserver
+   ```
 
-Run the Django development server:
-
-python manage.py runserver
-
-Contributing
+## Contributing
 
 Contributions are welcome! Please fork this repository and submit a pull request for any changes you'd like to make.
+
+
