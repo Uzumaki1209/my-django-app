@@ -1,9 +1,8 @@
-# Configuration file for the Sphinx documentation builder.
 import os
 import sys
 import django
 
-# Insert the path to your Django project
+# Insert the path to your Django project (the parent directory of the Django app)
 sys.path.insert(0, os.path.abspath('..'))
 
 # Specify your Django settings module
@@ -26,7 +25,11 @@ release = '27/08/2024'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.viewcode',  # Optional, but useful for linking to the source code
+    'sphinx.ext.napoleon',  # Optional, if you're using Google or NumPy style docstrings
+]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
