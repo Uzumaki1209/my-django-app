@@ -1,38 +1,34 @@
+# Configuration file for the Sphinx documentation builder.
 import os
 import sys
 import django
 
-# Insert the path to your Django project (the parent directory of the Django app)
-sys.path.insert(0, os.path.abspath('..'))
+# Add the path to your Django project
+sys.path.insert(0, os.path.abspath(r'C:\Users\Kevin Pather\Desktop\Hyperion SE\Hyperion Course\Level 3\Task 10'))
 
-# Specify your Django settings module
+# Set the Django settings module environment variable correctly
 os.environ['DJANGO_SETTINGS_MODULE'] = 'political_candidate.settings'
 
 # Initialize Django
 django.setup()
 
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Django Project'
+project = 'Political Candidate App'
 copyright = '2024, Kevin Pather'
 author = 'Kevin Pather'
-release = '27/08/2024'
+release = '28/08/2024'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
     'sphinx.ext.autodoc',
-    'sphinx.ext.viewcode',  # Optional, but useful for linking to the source code
-    'sphinx.ext.napoleon',  # Optional, if you're using Google or NumPy style docstrings
 ]
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = []
 
 language = 'English'
 
@@ -41,3 +37,4 @@ language = 'English'
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+

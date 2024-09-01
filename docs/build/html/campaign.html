@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>campaign package &#8212; Django Project 27/08/2024 documentation</title>
+    <title>campaign package &#8212; Political Candidate App 28/08/2024 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=c058f7c8" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
-    <script src="_static/documentation_options.js?v=547b84d1"></script>
+    <script src="_static/documentation_options.js?v=4ec43204"></script>
     <script src="_static/doctools.js?v=9a2dae69"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -74,7 +74,7 @@
 <span id="campaign-apps-module"></span><h2>campaign.apps module<a class="headerlink" href="#module-campaign.apps" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="campaign.apps.CampaignConfig">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.apps.</span></span><span class="sig-name descname"><span class="pre">CampaignConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/apps.html#CampaignConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.apps.CampaignConfig" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.apps.</span></span><span class="sig-name descname"><span class="pre">CampaignConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">app_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">app_module</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.apps.CampaignConfig" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">AppConfig</span></code></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="campaign.apps.CampaignConfig.default_auto_field">
@@ -93,11 +93,18 @@
 <span id="campaign-forms-module"></span><h2>campaign.forms module<a class="headerlink" href="#module-campaign.forms" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="campaign.forms.VolunteerForm">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.forms.</span></span><span class="sig-name descname"><span class="pre">VolunteerForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/forms.html#VolunteerForm"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.forms.VolunteerForm" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.forms.</span></span><span class="sig-name descname"><span class="pre">VolunteerForm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">files=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auto_id='id_%s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">initial=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error_class=&lt;class</span> <span class="pre">'django.forms.utils.ErrorList'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_suffix=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty_permitted=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instance=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_required_attribute=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">renderer=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.forms.VolunteerForm" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelForm</span></code></p>
+<p>Form for adding and editing volunteers associated with a candidate.</p>
+<dl class="simple">
+<dt>Meta:</dt><dd><p>model (Model): The model that this form is associated with.
+fields (list): The fields to be included in the form.
+widgets (dict): Custom widgets for form fields.</p>
+</dd>
+</dl>
 <dl class="py class">
 <dt class="sig sig-object py" id="campaign.forms.VolunteerForm.Meta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="reference internal" href="_modules/campaign/forms.html#VolunteerForm.Meta"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.forms.VolunteerForm.Meta" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#campaign.forms.VolunteerForm.Meta" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="campaign.forms.VolunteerForm.Meta.fields">
@@ -140,8 +147,17 @@
 <span id="campaign-models-module"></span><h2>campaign.models module<a class="headerlink" href="#module-campaign.models" title="Link to this heading">¶</a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="campaign.models.CampaignEvent">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.models.</span></span><span class="sig-name descname"><span class="pre">CampaignEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">location</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">candidate</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/models.html#CampaignEvent"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.models.CampaignEvent" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.models.</span></span><span class="sig-name descname"><span class="pre">CampaignEvent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.models.CampaignEvent" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Represents an event associated with a candidate's campaign.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>title (str): The title of the campaign event.
+description (str): The description of the campaign event.
+date (datetime): The date and time of the campaign event.
+location (str): The location of the campaign event.
+candidate (ForeignKey): A foreign key to the Candidate model.</p>
+</dd>
+</dl>
 <dl class="py exception">
 <dt class="sig sig-object py" id="campaign.models.CampaignEvent.DoesNotExist">
 <em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#campaign.models.CampaignEvent.DoesNotExist" title="Link to this definition">¶</a></dt>
@@ -226,8 +242,17 @@ object the first time, the query is executed.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="campaign.models.Candidate">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.models.</span></span><span class="sig-name descname"><span class="pre">Candidate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">party</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">website</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/models.html#Candidate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.models.Candidate" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.models.</span></span><span class="sig-name descname"><span class="pre">Candidate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.models.Candidate" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Represents a political candidate.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>name (str): The name of the candidate.
+bio (str): The biography of the candidate.
+party (str): The political party of the candidate.
+website (str): The website URL of the candidate.
+image (ImageField): The image of the candidate.</p>
+</dd>
+</dl>
 <dl class="py exception">
 <dt class="sig sig-object py" id="campaign.models.Candidate.DoesNotExist">
 <em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#campaign.models.Candidate.DoesNotExist" title="Link to this definition">¶</a></dt>
@@ -321,8 +346,17 @@ object the first time, the query is executed.</p>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="campaign.models.Volunteer">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.models.</span></span><span class="sig-name descname"><span class="pre">Volunteer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phone</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">candidate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">created_at</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/models.html#Volunteer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.models.Volunteer" title="Link to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">campaign.models.</span></span><span class="sig-name descname"><span class="pre">Volunteer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.models.Volunteer" title="Link to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Represents a volunteer working for a candidate.</p>
+<dl class="simple">
+<dt>Attributes:</dt><dd><p>name (str): The name of the volunteer.
+email (EmailField): The email address of the volunteer.
+phone (str): The phone number of the volunteer.
+candidate (ForeignKey): A foreign key to the Candidate model.
+created_at (datetime): The date and time when the record was created.</p>
+</dd>
+</dl>
 <dl class="py exception">
 <dt class="sig sig-object py" id="campaign.models.Volunteer.DoesNotExist">
 <em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#campaign.models.Volunteer.DoesNotExist" title="Link to this definition">¶</a></dt>
@@ -416,38 +450,87 @@ object the first time, the query is executed.</p>
 <span id="campaign-views-module"></span><h2>campaign.views module<a class="headerlink" href="#module-campaign.views" title="Link to this heading">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="campaign.views.events">
-<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/views.html#events"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.views.events" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.views.events" title="Link to this definition">¶</a></dt>
+<dd><p>Display the events page with a list of campaign events.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): The HTTP request object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>HttpResponse: The rendered events page with a list of events.</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="campaign.views.home">
-<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">home</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/views.html#home"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.views.home" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">home</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.views.home" title="Link to this definition">¶</a></dt>
+<dd><p>Display the home page with candidate information.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): The HTTP request object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>HttpResponse: The rendered home page with candidate information.</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="campaign.views.logout_view">
-<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">logout_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/views.html#logout_view"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.views.logout_view" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">logout_view</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.views.logout_view" title="Link to this definition">¶</a></dt>
+<dd><p>Log out the user and redirect to the homepage.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): The HTTP request object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>HttpResponse: Redirect to the homepage.</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="campaign.views.profile">
-<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/views.html#profile"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.views.profile" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">profile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.views.profile" title="Link to this definition">¶</a></dt>
+<dd><p>Display the user's profile page.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): The HTTP request object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>HttpResponse: The rendered profile page.</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="campaign.views.register">
-<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/views.html#register"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.views.register" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">register</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.views.register" title="Link to this definition">¶</a></dt>
+<dd><p>Handle user registration and display the registration form.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): The HTTP request object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>HttpResponse: The rendered registration form page.</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="campaign.views.volunteer">
-<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">volunteer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/views.html#volunteer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.views.volunteer" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">volunteer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.views.volunteer" title="Link to this definition">¶</a></dt>
+<dd><p>Handle the volunteer form submission and display the form page.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): The HTTP request object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>HttpResponse: The rendered volunteer form page.</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="campaign.views.volunteer_success">
-<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">volunteer_success</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/campaign/views.html#volunteer_success"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#campaign.views.volunteer_success" title="Link to this definition">¶</a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">campaign.views.</span></span><span class="sig-name descname"><span class="pre">volunteer_success</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#campaign.views.volunteer_success" title="Link to this definition">¶</a></dt>
+<dd><p>Display the volunteer success page.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>request (HttpRequest): The HTTP request object.</p>
+</dd>
+<dt>Returns:</dt><dd><p>HttpResponse: The rendered volunteer success page.</p>
+</dd>
+</dl>
+</dd></dl>
 
 </section>
 <section id="module-campaign">
@@ -462,7 +545,7 @@ object the first time, the query is executed.</p>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">Django Project</a></h1>
+<h1 class="logo"><a href="index.html">Political Candidate App</a></h1>
 
 
 
